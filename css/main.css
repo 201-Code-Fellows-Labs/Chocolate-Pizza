@@ -5,7 +5,20 @@ body {
     color: #444;
   }
 
+  .thin-diagonal-lines{
+    margin-top: 25px;
+    width: 960px;
+    height: 12px;
+    background-size: 6px 6px; 
+    background-image: linear-gradient(45deg, transparent 46%, gray 49%, gray 51%, transparent 55%);
+  }
+
   /* HEADER*/
+  header {
+    display: inline-block;
+    margin: 0;
+  }
+  
   .clearfix::after {
     content: "";
     clear: both;
@@ -16,24 +29,36 @@ body {
     width: 50%; 
   }
 
-.top-logo{
-   text-align: left;
-}
-.title {
-    font-family: 'Yellowtail';
-    font-size: 2em;
-    color: rgb(0, 0, 0); 
-  }
-  .sub-title {
-    font-family: 'Yanone Kaffeesatz';
-    font-size: 0.7em;
-    text-transform: uppercase; 
-    color: rgb(167, 166, 166);
-    margin: 0;
+  .logo{
+      float: left;
+      margin-right: 10px;
   }
 
-.share-links{
-    text-align: right;
+    header p {
+     display:  block;
+     margin: 0;
+     line-height: 25px;
+  }
+  
+  .title {
+    font-family: 'Yellowtail', cursive;
+    font-size: 2.7em;
+    color: rgb(0, 0, 0);  
+  }
+  .sub-title {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+   font-weight: 200;
+    font-size: 0.9em;
+    text-transform: uppercase; 
+    color: rgb(73, 72, 72);  
+  }
+
+  .share-links{
+    text-align: right; 
+    font-size: 5px;
+}
+  .share-links-2{
+    margin-left: 7px;
 }
 
 /* MAIN*/
@@ -44,21 +69,18 @@ h1 {
     color: rgb(0, 0, 0);
 }
 
-
   .main-sub-title {
     font-family: 'Yanone Kaffeesatz';
     font-size: 1em;
     margin: 0;
   }
 
-  .thin-diagonal-lines{
-    width: 960px;
-    height: 10px;
-    background-size: 6px 6px; 
-    background-image: linear-gradient(45deg,   
-    transparent 46%, gray 49%, gray 51%, transparent 55%);
-  }
+ 
 
   .main-img{
       width: 960px;
+  }
+
+  .ingridients-list{
+    font-family: 'Sniglet', cursive;
   }
