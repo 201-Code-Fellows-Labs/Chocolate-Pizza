@@ -1,16 +1,16 @@
 body {
     width: 960px;
-    margin: 45px auto;
+    margin: 40px auto;
     padding: 40px 120px;
-    color: #444;
+ 
   }
 
   .thin-diagonal-lines{
     margin-top: 25px;
     width: 960px;
-    height: 12px;
-    background-size: 6px 6px; 
-    background-image: linear-gradient(45deg, transparent 46%, gray 49%, gray 51%, transparent 55%);
+    height: 14px;
+    background-size: 4px 4px; 
+    background-image: linear-gradient(45deg, transparent 46%, rgb(170, 170, 170) 49%, rgb(170, 170, 170) 51%, transparent 55%);
   }
 
   .clearfix::after {
@@ -35,13 +35,22 @@ body {
     float: left;
     width: 20%; 
   }
+  .box-25 {
+    float: left;
+    width: 25%; 
+  }
+  
   .box-47 {
     float: left;
     width: 47.5%; 
   }
-  .box-60 {
+  .box-65 {
     float: left;
-    width: 60%; 
+    width: 65%; 
+  }
+  .box-70 {
+    float: left;
+    width: 70%; 
   }
 
   /* HEADER*/
@@ -51,14 +60,14 @@ body {
   }
   
   .logo{
-      float: left;
-      margin-right: 10px;
+    float: left;
+    margin-right: 10px;
   }
 
     header p {
-     display:  block;
-     margin: 0;
-     line-height: 25px;
+    display:  block;
+    margin: 0;
+    line-height: 25px;
   }
   
   .title {
@@ -117,8 +126,8 @@ h1 {
   }
 
   .main-img{
-      width: 960px;
-      margin-top: 20px;
+    width: 960px;
+    margin-top: 20px;
   }
 
   main p {
@@ -129,7 +138,7 @@ h1 {
     font-weight: 100;
   }
   .main-text{
-      text-indent: 2em;
+    text-indent: 2em;
   }
  .form {
     background-image: url("../assets/list-bg.png");
@@ -146,16 +155,43 @@ h1 {
   .left {
     float: left;
   }
- .right{
+  .right{
     float: right; 
+  }
+  .author-img {
+    margin-top: 25px;
+  }
+ .bio {
+     margin-top: 20px;
  }
-
+  h2{
+    line-height: 5px;
+    color: rgb(112, 97, 79);
+  }
+  .button {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+ }
+ button {
+    font-family : inherit;
+    width: 210px;
+    height: 60px; 
+    font-size: 1.3em;
+    margin: 0;
+    background-color: rgb(213, 104, 64);
+    font-family: 'Inconsolata', monospace;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    border: none;
+    margin: 25px;
+ }
 
  /* FOOTER */
  footer div {
     text-align: center;
     color: rgb(182, 181, 181); 
-    font-size: 1.2em;
+    font-size: 1.25em;
     margin: 0;
     display:  block;
   }
