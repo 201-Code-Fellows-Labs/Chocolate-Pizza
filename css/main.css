@@ -31,6 +31,34 @@
     text-transform: uppercase;
     border: none;
   }
+  
+  input[type="checkbox"].cust-checkbox {
+    display: none; 
+  }
+ 
+  input[type='checkbox'].cust-checkbox ~ .check-toggle{
+     height: 0.6em;
+     width: 0.6em;
+     display:inline-block;
+     position: relative;
+     padding: 0 0 0 0px;
+     border-style: solid;
+     border-color: rgb(158, 145, 145);
+     border-radius: 5px; 
+     border-width: thin;
+    }
+    
+    input[type='checkbox'].cust-checkbox:checked ~ .check-toggle::after {
+    content: "\2714";
+    position: absolute;
+    font-size: 0.8em;
+    left: calc(50% - 4px);
+    top: calc(50% - 20px);
+    }
+    .label{
+        margin-left: 0.5em;
+    }
+    
   .thin-diagonal-lines{
     margin-top: 25px;
     width: 960px;
@@ -129,7 +157,7 @@
  .form {
     background-image: url("../assets/list-bg.png");
     background-size: 960px 360px;  
-    padding-left: 2em;
+    padding-left: 3em;
     padding-top: 42px;
     padding-bottom: 50px;
     font-family: 'Sniglet', cursive;
@@ -138,6 +166,9 @@
     line-height: 38px;
     color: rgb(112, 97, 79);
   } 
+  .done {
+    text-decoration: line-through; 
+  }
   .author-img {
     margin-top: 25px;
   }
