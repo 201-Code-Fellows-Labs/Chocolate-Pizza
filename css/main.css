@@ -31,34 +31,6 @@
     text-transform: uppercase;
     border: none;
   }
-  
-  input[type="checkbox"].cust-checkbox {
-    display: none; 
-  }
- 
-  input[type='checkbox'].cust-checkbox ~ .check-toggle{
-     height: 0.6em;
-     width: 0.6em;
-     display:inline-block;
-     position: relative;
-     padding: 0 0 0 0px;
-     border-style: solid;
-     border-color: rgb(158, 145, 145);
-     border-radius: 5px; 
-     border-width: thin;
-    }
-    
-    input[type='checkbox'].cust-checkbox:checked ~ .check-toggle::after {
-    content: "\2714";
-    position: absolute;
-    font-size: 0.8em;
-    left: calc(50% - 4px);
-    top: calc(50% - 20px);
-    }
-    .label{
-        margin-left: 0.5em;
-    }
-    
   .thin-diagonal-lines{
     margin-top: 25px;
     width: 960px;
@@ -166,6 +138,32 @@
     line-height: 38px;
     color: rgb(112, 97, 79);
   } 
+  input[type="checkbox"].cust-checkbox {
+    display: none; 
+  }
+  input[type='checkbox'].cust-checkbox ~ .check-toggle{
+    height: 0.6em;
+    width: 0.6em;
+    display:inline-block;
+    position: relative;
+    padding: 0 0 0 0px;
+    border-style: solid;
+    border-color: rgb(179, 165, 165);
+    border-radius: 5px; 
+    border-width: thin;
+    cursor: pointer;
+    }   
+  input[type='checkbox'].cust-checkbox:checked ~ .check-toggle::after {
+    content: "\2714";
+    position: absolute;
+    font-size: 0.8em;
+    color: rgb(184, 159, 159);
+    left: calc(50% - 4px);
+    top: calc(50% - 20px);
+    }
+  .label{
+    margin-left: 0.5em;
+    }
   .done {
     text-decoration: line-through; 
   }
@@ -182,6 +180,7 @@
     font-size: 1.3em;
     color: rgb(255, 255, 255);
     margin: 25px;
+    cursor: pointer;
   }
   
 
@@ -189,8 +188,10 @@
   footer div {
     text-align: center;
     color: rgb(182, 181, 181); 
-    font-size: 1.25em;
+    font-size: 1.1em;
     margin: 0;
     display:  block;
   }
- 
+ .line{
+    font-size: 1.25em;
+ }
